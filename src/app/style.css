@@ -1,0 +1,68 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.app {
+    border-radius: 6px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px repeat(2, 1fr);
+    height: 300px;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+.app div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.app__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.app__counter {
+    background-color: oldlace;
+    font-size: 2.5rem;
+    font-weight: bold;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.app__button-dicrease {
+    background-color: lightseagreen;
+    border-radius: 6px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.1rem;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.app__button-dicrease:hover,
+.app__button-increase:hover {
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.app__button-increase {
+    background-color: tomato;
+    border-radius: 6px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.1rem;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
